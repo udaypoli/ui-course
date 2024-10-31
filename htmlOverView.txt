@@ -1,0 +1,2 @@
+what is html?
+-> it is a marqup language which is used to strcture e content on web page
