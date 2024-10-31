@@ -9,3 +9,7 @@ what is website?
 what is web page?
 -> it an electronic page which is used to display some content.
 
+	softwares required : vs code and live server extension
+	to open browser with shortcut : alt+l and alt+o
+
+
