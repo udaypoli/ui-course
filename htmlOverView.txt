@@ -1,2 +1,11 @@
-what is html?
--> it is a marqup language which is used to strcture e content on web page
+what is html and why?
+-> it is a marqup language which is used to strcture e content on web page.
+what is web application ?
+->an application which is run on web server we can access this using by browser and internet connectivity.
+why web application ?
+-> for business purpose like selling products and providing service to multiple users at same time.
+what is website?
+-> it is nothing but a particular location on web server.
+what is web page?
+-> it an electronic page which is used to display some content.
+
