@@ -12,6 +12,6 @@ what is web page?
 	softwares required : vs code and live server extension
 	to open browser with shortcut : alt+l and alt+o
 
-day 2 : lists->1.orderlist 2.unorder list 3.definition lists
+day 1 : lists->1.orderlist 2.unorder list 3.definition lists
 
 
