@@ -13,5 +13,6 @@ what is web page?
 	to open browser with shortcut : alt+l and alt+o
 
 day 1 : lists->1.orderlist 2.unorder list 3.definition lists
-
+	4.audio 5.video 6.image
+day2 : 
 
