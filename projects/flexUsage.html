@@ -5,35 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container>.items>img{
-                    width: 100px;
-                    height: 100px;
-        }
-        .container{
-            border: 2px solid black;
-            display: flex;
-            justify-content: space-between;
-        }
-        
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    
+    background-color: rgb(41, 43, 46);
+    padding: 0;
+    display: flex;
+}
+.navbar>li{
+    position: relative;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.dropdown-menu{
+    position: absolute;
+   min-width: 180px;
+   padding: 0;
+}
+ul{
+    list-style: none;
+}
+.dropdown-menu>li{
+    background-color: rgb(41, 43, 46);
+}
+.dropdown-menu>li:hover{
+    background-color: rgb(53, 55, 56);
+}
+.navbar>li>a:hover{
+    background-color: rgb(53, 55, 56);
+}
+.dropdown-menu{
+    display: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu .dropdown .dropdown-menu{
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    display: block;
+}
+.dropdown:hover .dropdown-menu .dropdown-menu{
+    display: none;
+}
+#acc:hover #acc1{
+    display: block;
+}
+
+ 
+
+
+    
+     
+          
     </style>
 </head>
 <body>
-            <div class="container">
-                <div class="items" id="item1"><img src="https://rukminim2.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100" alt=""><br>Grocery</div>
-                <div class="items" id="item2"><img src="https://rukminim2.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100" alt=""></div>
-                <div class="items" id="item3"><img src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/0139228b2f7eb413.jpg?q=100" alt=""></div>
-                <div class="items" id="item4"><img src="https://rukminim2.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100" alt=""> <br>
-                    <select name="" id="">
-                        <option value="">indigo</option>
-                        <option value="">kingfisher</option>
-                        <option value="">spacejet</option>
-                    </select>
-                </div>
-                <div class="items" id="item5"><img src="" alt=""></div>
-                <div class="items" id="item6"><img src="" alt=""></div>
-                <div class="items" id="item7"><img src="" alt=""></div>
-                <div class="items" id="item8"><img src="" alt=""></div>
-                <div class="items" id="item9"><img src="" alt=""></div>
-            </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Fashion</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Women's Fashion</a></li>
+                    <li class="dropdown" id="acc">
+                        <a href="#">Accessories</a>
+                        <ul class="dropdown-menu" id="acc1">
+                            <li><a href="#">Watches</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Jewelry</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
