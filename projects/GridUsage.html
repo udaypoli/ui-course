@@ -5,41 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .items{
-            border: 2px solid red;
+        body{
+            padding: 0;
+            margin: 0;
         }
-        .container{
-            width: 70vw;
-            height: 80vh;
-            border: 2px solid black;
+       .courseContainer {
+            list-style: none;
+        }
+        a{
+           
+            padding: 10px;
+            background-color: rgb(134, 33, 33);
+            text-decoration: none;
+            color: aliceblue;
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color: rgb(59, 59, 188);
+        }
+        .gridContainer{
             display: grid;
-            grid-template: 1fr 3fr 1fr/1fr 3fr 1fr;
+            
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
         }
-        .container>.items:nth-child(2){
-            background-color: orange;
-            grid-column: 1/2;
-            grid-row: 2/3;
+        img{
+            
+            width: 100%;
+            height: 200px;
         }
-        .container>.items:nth-child(1){
-            background-color: rgb(84, 142, 48);
-            grid-column: 1/4;
-            grid-row: 1/2;
+        .gridchild{
+           
+            
+            background-color: rgb(152, 165, 165);
         }
-        .container>:last-child{
-            background-color: pink;
-            grid-column: 1/4;
-            grid-row: 3/4;
+        .courseContainer{
+            padding-left: 0;
+            
         }
-        .container>:las
+        ul>li:last-child{
+            padding: 20px;
+            background-color: rgb(221, 234, 245);
+            
+        }
+        
+        p{
+            padding-top: 0px;
+            margin-top: 0px;
+            padding-left: 20px;
+        }
+        b{
+            padding-left: 20px;
+        }
+        a{
+            margin-left: 30px;
+            position: relative;
+        }
+       
+       
+        ul{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        li{
+            
+            
+        }
+        .gridchild{
+            transition: all 0.3s ease-in-out ;
+        }
+        .gridchild:hover{
+            box-shadow: 10px 10px 10px rgb(96, 95, 95);
+            transform: translate(0px, -5px)
+            
+        }
+        .gridContainer{
+            padding: 150px;
+        }
+        .gridchild{
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        
+        
+        
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="items" id="item1"></div>
-        <div class="items" id="item2"></div>
-        <div class="items" id="item3"></div>
-        <div class="items" id="item4"></div>
-        <div class="items" id="item5"></div>
+        
+    <div class="gridContainer">
+        <!-- #region grid 1-->
+        <div class="gridchild" id="grid1"><ul class="courseContainer">
+            <li><img src="https://ashokitech.com/assets/uploads/course/Java%20full%20stack%20development.jpg" alt=""></li>
+            <li><b>Course Duration : </b><p style="display: inline-block;">5 Months</p><br>
+                   <b>Offer Price :</b><p style="display: inline-block;">30000</p>
+               </li>
+            <li> <a href="">View More</a></li>
+           </ul></div>
+           <!-- #region grid2-->
+        <div class="gridchild" id="grid2"><ul class="courseContainer">
+            <li><img src="https://ashokitech.com/assets/uploads/course/Spring%20boot%20With%20Microservices.jpg" alt=""></li>
+            <li><b>Course Duration : </b><p style="display: inline-block;">5 Months</p><br>
+                   <b>Offer Price :</b><p style="display: inline-block;">30000</p>
+               </li>
+            <li> <a href="">View More</a></li>
+           </ul></div>
+           <!-- #region grid3-->
+        <div class="gridchild" id="grid3"><ul class="courseContainer">
+            <li><img src="https://ashokitech.com/assets/uploads/course/Java%20Real-time%20Project.jpg" alt=""></li>
+            <li><b>Course Duration : </b><p style="display: inline-block;">5 Months</p><br>
+                   <b>Offer Price :</b><p style="display: inline-block;">30000</p>
+               </li>
+            <li> <a href="">View More</a></li>
+           </ul></div>
+           <!-- #region grid4-->
+        <div class="gridchild" id="grid4"><ul class="courseContainer">
+            <li><img src="https://ashokitech.com/assets/uploads/course/DevOps%20With%20AWS.jpg" alt=""></li>
+            <li><b>Course Duration : </b><p style="display: inline-block;">5 Months</p><br>
+                   <b>Offer Price :</b><p style="display: inline-block;">30000</p>
+               </li>
+            <li> <a href="">View More</a></li>
+           </ul></div>
+           <!-- #region grid5-->
+        <div class="gridchild" id="grid5"><ul class="courseContainer">
+            <li><img src="https://ashokitech.com/assets/uploads/course/Python%20Fullstack.jpg" alt=""></li>
+            <li><b>Course Duration : </b><p style="display: inline-block;">5 Months</p><br>
+                   <b>Offer Price :</b><p style="display: inline-block;">30000</p>
+               </li>
+            <li> <a href="">View More</a></li>
+           </ul></div>
+           <!-- #region grid6-->
+        <div class="gridchild" id="grid6"><ul class="courseContainer">
+            <li><img src="https://ashokitech.com/assets/uploads/course/React%20JS.jpg" alt=""></li>
+            <li><b>Course Duration : </b><p style="display: inline-block;">5 Months</p><br>
+                   <b>Offer Price :</b><p style="display: inline-block;">30000</p>
+               </li>
+            <li> <a href="">View More</a></li>
+           </ul></div>
     </div>
+       
 </body>
 </html>
